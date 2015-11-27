@@ -444,6 +444,7 @@
 {
     CTAssetsViewController *vc = [[CTAssetsViewController alloc] init];
     vc.assetsGroup = [self.groups objectAtIndex:indexPath.row];
+    vc.options = self.options;
     
     [self.navigationController pushViewController:vc animated:YES];
 }
