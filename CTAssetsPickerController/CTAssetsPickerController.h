@@ -29,6 +29,7 @@
 #import <UIKit/UIKit.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 
+#import "CTAssetsOptions.h"
 
 
 @protocol CTAssetsPickerControllerDelegate;
@@ -98,6 +99,23 @@
  */
 @property (nonatomic, readonly, strong) UINavigationController *childNavigationController;
 
+/**
+ * Options for customize ordering of assets
+ */
+
+@property (nonatomic, strong) CTAssetsOptions *options;
+
+/**
+ *  @name Initilize with assests options
+ */
+
+/**
+ *
+ *  @param assetsOptions order for assests
+ *
+ */
+
+- (id)initWithOptions:(CTAssetsOptions *)assetsOptions;
 
 /**
  *  @name Managing Selections

@@ -94,12 +94,14 @@
     if (!self.assets)
         self.assets = [[NSMutableArray alloc] init];
 
-    CTAssetsPickerController *picker = [[CTAssetsPickerController alloc] init];
+    CTAssetsOptions *options = [[CTAssetsOptions alloc] init];
+    options.isLatestOrder = NO;
+    
+    CTAssetsPickerController *picker = [[CTAssetsPickerController alloc] initWithOptions:options];
     picker.assetsFilter         = [ALAssetsFilter allAssets];
     picker.showsCancelButton    = (UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPad);
     picker.delegate             = self;
     picker.selectedAssets       = [NSMutableArray arrayWithArray:self.assets];
-    
     // iPad
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
     {

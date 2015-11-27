@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		9ECD2B3F1C089462006097B8 /* CTAssetsOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECD2B3E1C089462006097B8 /* CTAssetsOptions.m */; settings = {ASSET_TAGS = (); }; };
 		A67AE04091963F6C77C5FE46 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AB9ED3927E2C7F99667B50 /* libPods.a */; };
 		ADDEA34B192F4A540049D6A7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADDEA34A192F4A540049D6A7 /* MediaPlayer.framework */; };
 		ADE31D8A17EFF08C008958B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE31D8917EFF08C008958B8 /* Foundation.framework */; };
@@ -63,6 +64,8 @@
 		573E56731AB9C90F00250567 /* nl-BE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "nl-BE"; path = "nl-BE.lproj/CTAssetsPickerController.strings"; sourceTree = "<group>"; };
 		78FC009B0D59C0E3BB69A7DE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		79B51BE71A97741A0015DD2D /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/CTAssetsPickerController.strings; sourceTree = "<group>"; };
+		9ECD2B3D1C089462006097B8 /* CTAssetsOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTAssetsOptions.h; sourceTree = "<group>"; };
+		9ECD2B3E1C089462006097B8 /* CTAssetsOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTAssetsOptions.m; sourceTree = "<group>"; };
 		A728F23A1B283B7B00CEE3E4 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/CTAssetsPickerController.strings; sourceTree = "<group>"; };
 		AD309FC619E67B7500BFCE8B /* CTAssetsPickerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTAssetsPickerCommon.h; sourceTree = "<group>"; };
 		AD58798218E54F0C00B5773D /* CTAssetsGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTAssetsGroupViewController.h; sourceTree = "<group>"; };
@@ -243,6 +246,8 @@
 				AD5C307B193EF4CE00D31C45 /* CTAssetsViewControllerTransition.m */,
 				AD309FC619E67B7500BFCE8B /* CTAssetsPickerCommon.h */,
 				AD58799A18E5556700B5773D /* Categories */,
+				9ECD2B3D1C089462006097B8 /* CTAssetsOptions.h */,
+				9ECD2B3E1C089462006097B8 /* CTAssetsOptions.m */,
 			);
 			path = CTAssetsPickerController;
 			sourceTree = "<group>";
@@ -393,6 +398,7 @@
 			files = (
 				ADE31D9617EFF08C008958B8 /* main.m in Sources */,
 				ADE31D9A17EFF08C008958B8 /* CTAppDelegate.m in Sources */,
+				9ECD2B3F1C089462006097B8 /* CTAssetsOptions.m in Sources */,
 				ADE31DA017EFF08C008958B8 /* CTMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

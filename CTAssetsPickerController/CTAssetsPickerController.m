@@ -46,10 +46,12 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
 
 @implementation CTAssetsPickerController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithOptions:(CTAssetsOptions *)assetsOptions
 {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])
+    if (self = [super init])
     {
+        self.options = assetsOptions;
+        
         _assetsLibrary          = [self.class defaultAssetsLibrary];
         _assetsFilter           = [ALAssetsFilter allAssets];
         _selectedAssets         = [[NSMutableArray alloc] init];
@@ -63,7 +65,6 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
         [self setupToolbarApperance];
         [self addKeyValueObserver];
     }
-    
     return self;
 }
 
@@ -72,13 +73,12 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
     [self removeKeyValueObserver];
 }
 
-
-
 #pragma mark - Setup Navigation Controller
 
 - (void)setupNavigationController
 {
     CTAssetsGroupViewController *vc = [[CTAssetsGroupViewController alloc] init];
+    vc.options = self.options;
     UINavigationController *nav = [[self createChildNavigationController] initWithRootViewController:vc];
     
     // Enable iOS 7 back gesture

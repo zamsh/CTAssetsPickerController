@@ -374,6 +374,7 @@
     {
         CTAssetsViewController *vc = [[CTAssetsViewController alloc] init];
         vc.assetsGroup = group;
+        vc.options = self.options;
         
         self.navigationController.viewControllers = @[self, vc];
     }

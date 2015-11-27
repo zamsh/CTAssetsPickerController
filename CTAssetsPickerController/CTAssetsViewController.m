@@ -184,8 +184,14 @@ NSString * const CTAssetsSupplementaryViewIdentifier = @"CTAssetsSupplementaryVi
             [self reloadData];
         }
     };
-    
-    [self.assetsGroup enumerateAssetsUsingBlock:resultsBlock];
+    if (self.options.isLatestOrder)
+    {
+        [self.assetsGroup enumerateAssetsWithOptions:NSEnumerationReverse usingBlock:resultsBlock];
+    }
+    else
+    {
+        [self.assetsGroup enumerateAssetsUsingBlock:resultsBlock];
+    }
 }
 
 

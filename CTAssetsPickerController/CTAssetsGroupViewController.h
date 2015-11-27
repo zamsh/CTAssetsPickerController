@@ -27,8 +27,14 @@
 
 #import <UIKit/UIKit.h>
 
-
+#import "CTAssetsOptions.h"
 
 @interface CTAssetsGroupViewController : UITableViewController
+
+/**
+ * Options for customize ordering of assets
+ */
+@property (nonatomic, strong) CTAssetsOptions *options;
+
 
 @end

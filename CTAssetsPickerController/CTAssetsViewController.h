@@ -27,11 +27,11 @@
 
 #import <UIKit/UIKit.h>
 #import <AssetsLibrary/AssetsLibrary.h>
-
-
+#import "CTAssetsOptions.h"
 
 @interface CTAssetsViewController : UICollectionViewController
 
 @property (nonatomic, strong) ALAssetsGroup *assetsGroup;
+@property (nonatomic, strong) CTAssetsOptions *options;
 
 @end
